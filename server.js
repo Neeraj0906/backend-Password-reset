@@ -14,7 +14,7 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use(cors({origin:["http://localhost:5173","https://password-3-o.vercel.app/"]}));
+app.use(cors({origin:["http://localhost:5173","https://password-3-o.vercel.app"]}));
 app.use(express.json());
 app.use('/api/auth', authRoutes);
 
