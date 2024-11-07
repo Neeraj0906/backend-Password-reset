@@ -79,7 +79,7 @@ exports.forgotPassword = async (req, res) => {
     const mailOptions = {
         to: user.email,
         subject: 'Password Reset',
-        text: `Please click on the following link to reset your password: http://localhost:3000/reset-password/${token}`,
+        text: `Please click on the following link to reset your password: https://frontend-password-reset-mu.vercel.app/resetpassword/${token}`,
     };
 
     transporter.sendMail(mailOptions, (err) => {
